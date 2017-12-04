@@ -1,0 +1,20 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb",
+    "plugin:react-native/all",
+    "plugin:jest/recommended",
+  ],
+  "plugins": [
+    "react",
+    "react-native",
+    "jsx-a11y",
+    "import",
+    "jest",
+  ],
+  "env": {
+    "jest/globals": true,
+  },
+  "rules": {
+  }
+}
