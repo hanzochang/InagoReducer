@@ -1,10 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import { StyleSheet, Text, View } from 'react-native';
 import WebView from './components/WebView'
-//import WebViewWithControl from './components/WebViewWithControl'
-import SFSafariView from './components/SFSafariView'
 import { Constants, WebBrowser } from 'expo';
 
 export default class App extends React.Component {
