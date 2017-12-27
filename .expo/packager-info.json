@@ -1,5 +1,8 @@
 {
   "expoServerPort": 19000,
   "packagerPort": 19001,
-  "packagerPid": 4617
+  "packagerPid": 2138,
+  "expoServerNgrokUrl": "https://mp-w9y.hanzochang.inagoreducer.exp.direct",
+  "packagerNgrokUrl": "https://packager.mp-w9y.hanzochang.inagoreducer.exp.direct",
+  "ngrokPid": 2104
 }
