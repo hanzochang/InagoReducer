@@ -5,12 +5,6 @@ import WebView from './components/WebView'
 import { Constants, WebBrowser } from 'expo';
 
 export default class App extends React.Component {
-  // urlにマッチしたかを判定する処理
-  //const uri;
-  // static propTypes = {
-  //   dani: PropTypes.boolean,
-  // };
-
   constructor(props) {
     super(props);
     this.state = {
@@ -43,7 +37,6 @@ export default class App extends React.Component {
   _handlePressButtonAsync = async (url, goBackUrl) => {
     let result = await WebBrowser.openBrowserAsync(url);
     this.setState({ uri: goBackUrl, inside: true  });
-    //this.setState({ uri: goBackUrl, inside: true });
   };
 
   render() {
@@ -63,26 +56,8 @@ export default class App extends React.Component {
       console.log('OUTSIDE!!!!!!!!!!!!');
       return (
         <View />
-        // <WebView
-        //   source={{uri: old_uri}}
-        //   style={{marginTop: 20}}
-        //   parentMethod={this.shoutParent.bind(this)}
-        // />
       );
     }
-    // if(inside){
-    //   return (
-    //     <WebView
-    //       source={{uri: 'https://okkake.me'}}
-    //       style={{marginTop: 20}}
-    //       parentMethod={this.shoutParent.bind(this)}
-    //     />
-    //   );
-    // } else {
-    //   return (
-    //     <SFSafariView />
-    //   );
-    // }
   }
 }
 
